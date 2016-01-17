@@ -16,4 +16,8 @@ How do we know what python binary file is used :
     (etherpad)anuj@anuj-Inspiron-5520:~$ which python
     /home/anuj/etherpad/bin/python
     
+>>A custom python binary can also be used instead of the virtualenv's python binary with environment variables.
+    $ export VIRTUALENV_PYTHON=/opt/python-3.3/bin/python
+    $ virtualenv ENV
+    
 Reference : http://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/
