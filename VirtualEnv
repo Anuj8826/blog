@@ -1,0 +1,19 @@
+A VirtualEnvironment is a blessing for developers, it solves the problem of something called version conflicts that occur regarding applications. A simple example can be a project where you use projects which are built upon a specific version like using a specific version of DJANGO . 
+The code works almost for a long time unless the software packages are upgraded to a different version. Here comes the disaster we just did. The old piece of code works no more. Its broken, some of the api's dont work they were used to be . I know, I have THE GOOGLE to make my code work to the new version but why do I need to do so if things can be easier.
+VirtualEnv plays a great role in this, it provides a different set of environment for each project. 
+
+                                            \\  WHAT EXACTLY A VIRTUALENV DOES \\
+ 
+It basically is a directory that contains everything needed to run a Python program that contains a Python binary, a copy of entire Python Standard library, a copy of the pip installer and a site packages directory. So when installing any package when the virtualenv is activated , it installs everything needed to the site packages that are inside that particular env's directory . Therefore the global site package remains in default shape . No changes are done there and this is how each project have its own environment to work in with the customized set of software packages kept separately in there corresponding site-packages.
+
+How do we know what python binary file is used :
+>>when operating without using virtualenv
+    $ which python
+    /usr/bin/python
+
+>>when operating with virtualenv
+    source etherpad/bin/activate
+    (etherpad)anuj@anuj-Inspiron-5520:~$ which python
+    /home/anuj/etherpad/bin/python
+    
+Reference : http://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/
